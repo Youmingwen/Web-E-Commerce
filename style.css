@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav .ima {
+  height: 100px;
+}
+
+nav .cart {
+  width: 25px;
+}
+
+.navbar {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card-login {
+  justify-content: center;
+}
+
+.cn-logo {
+  position: relative;
+  text-align: center;
+}
+
+.cn-logo .bottom-centered {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
