@@ -48,7 +48,7 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
                 <ul class="navbar-nav navbar-right">
-                    <li><a type="button" class="nav-link" id="myBtn">Login</a></li> 
+                    <li><a type="button" class="nav-link" id="signinBtn">Login</a></li> 
                     <!-- Di atas adalah Login dalam Bentuk Modal -->
                     <!-- Di bawah adalah Register dalam Bentuk Web Page -->
                     <li><a class="nav-link" href="register.html">Sign Up</a></li>
@@ -59,7 +59,7 @@
         <!-- End Navbar -->
 
         <!-- Sign In & Sign Up Modal -->
-        <div class="modal" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal" tabindex="-1" role="dialog" id="signinModal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -90,7 +90,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-7 text-right">
-                                    <a class="small" href="#">Forgot password?</a>
+                                    <a class="small" href="#">Forgot password ?</a>
                                 </div>
                             </div>
                         </form>
@@ -105,11 +105,11 @@
         </div>
 
         <!-- Carousel Promo/Pamflet-->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselPromo" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselPromo" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselPromo" data-slide-to="1"></li>
+                <li data-target="#carouselPromo" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -122,14 +122,291 @@
                     <img class="d-block w-100" src="images/DefaultTest1.jpg" alt="Third slide">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselPromo" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselPromo" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+        </div>
+        <!-- End Carousel -->
+
+        <br>
+
+        <!-- Carousel Product Card -->
+        <div id="carouselProduct" class="carousel slide cPro" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container conPro">
+                            <div class="row">
+                                <div class="col mb-2">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-img-actions text-center">
+                                                <img src="images/Logo_ECom2.png" alt="">
+                                            </div>
+                                            <div class="card-body bg-light text-center">
+                                                <div class="mb-2">
+                                                    <h5 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2"
+                                                            data-abc="true">Product 1</a></h5>
+                                                </div>
+                                                <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                                <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i
+                                                        class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                                                <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i
+                                                        class="fa fa-cart-plus mr-2"></i> Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-2">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-img-actions text-center">
+                                                <img src="images/Logo_ECom2.png" alt="">
+                                            </div>
+                                            <div class="card-body bg-light text-center">
+                                                <div class="mb-2">
+                                                    <h5 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2"
+                                                            data-abc="true">Product 1</a></h5>
+                                                </div>
+                                                <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                                <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i
+                                                        class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                                                <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i
+                                                        class="fa fa-cart-plus mr-2"></i> Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-2">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-img-actions text-center">
+                                                <img src="images/Logo_ECom2.png" alt="">
+                                            </div>
+                                            <div class="card-body bg-light text-center">
+                                                <div class="mb-2">
+                                                    <h5 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2"
+                                                            data-abc="true">Product
+                                                            1</a></h5>
+                                                </div>
+                                                <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                                <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i
+                                                        class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                                                <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i
+                                                        class="fa fa-cart-plus mr-2"></i> Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-2">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-img-actions text-center">
+                                                <img src="images/Logo_ECom2.png" alt="">
+                                            </div>
+                                            <div class="card-body bg-light text-center">
+                                                <div class="mb-2">
+                                                    <h5 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2"
+                                                            data-abc="true">Product
+                                                            1</a></h5>
+                                                </div>
+                                                <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                                <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i
+                                                        class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                                                <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i
+                                                        class="fa fa-cart-plus mr-2"></i> Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container conPro">
+                            <div class="row">
+                                <div class="col mb-2">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-img-actions text-center">
+                                                <img src="images/Logo_ECom2.png" alt="">
+                                            </div>
+                                            <div class="card-body bg-light text-center">
+                                                <div class="mb-2">
+                                                    <h5 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Product
+                                                            1</a></h5>
+                                                </div>
+                                                <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                                <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i
+                                                        class="fa fa-star star"></i> </div>
+                                                <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i
+                                                        class="fa fa-cart-plus mr-2"></i> Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-2">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-img-actions text-center">
+                                                <img src="images/Logo_ECom2.png" alt="">
+                                            </div>
+                                            <div class="card-body bg-light text-center">
+                                                <div class="mb-2">
+                                                    <h5 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Product
+                                                            1</a></h5>
+                                                </div>
+                                                <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                                <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i
+                                                        class="fa fa-star star"></i> </div>
+                                                <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i
+                                                        class="fa fa-cart-plus mr-2"></i> Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-2">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-img-actions text-center">
+                                                <img src="images/Logo_ECom2.png" alt="">
+                                            </div>
+                                            <div class="card-body bg-light text-center">
+                                                <div class="mb-2">
+                                                    <h5 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Product
+                                                            1</a></h5>
+                                                </div>
+                                                <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                                <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i
+                                                        class="fa fa-star star"></i> </div>
+                                                <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i
+                                                        class="fa fa-cart-plus mr-2"></i> Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-2">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-img-actions text-center">
+                                                <img src="images/Logo_ECom2.png" alt="">
+                                            </div>
+                                            <div class="card-body bg-light text-center">
+                                                <div class="mb-2">
+                                                    <h5 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Product
+                                                            1</a></h5>
+                                                </div>
+                                                <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                                <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i
+                                                        class="fa fa-star star"></i> </div>
+                                                <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i
+                                                        class="fa fa-cart-plus mr-2"></i> Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container conPro">
+                            <div class="row">
+                                <div class="col mb-2">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-img-actions text-center">
+                                                <img src="images/Logo_ECom2.png" alt="">
+                                            </div>
+                                            <div class="card-body bg-light text-center">
+                                                <div class="mb-2">
+                                                    <h5 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Product
+                                                            1</a></h5>
+                                                </div>
+                                                <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                                <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i
+                                                        class="fa fa-star star"></i> </div>
+                                                <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i
+                                                        class="fa fa-cart-plus mr-2"></i> Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-2">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-img-actions text-center">
+                                                <img src="images/Logo_ECom2.png" alt="">
+                                            </div>
+                                            <div class="card-body bg-light text-center">
+                                                <div class="mb-2">
+                                                    <h5 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Product
+                                                            1</a></h5>
+                                                </div>
+                                                <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                                <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i
+                                                        class="fa fa-star star"></i> </div>
+                                                <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i
+                                                        class="fa fa-cart-plus mr-2"></i> Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-2">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-img-actions text-center">
+                                                <img src="images/Logo_ECom2.png" alt="">
+                                            </div>
+                                            <div class="card-body bg-light text-center">
+                                                <div class="mb-2">
+                                                    <h5 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Product
+                                                            1</a></h5>
+                                                </div>
+                                                <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                                <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i
+                                                        class="fa fa-star star"></i> </div>
+                                                <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i
+                                                        class="fa fa-cart-plus mr-2"></i> Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-2">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <div class="card-img-actions">
+                                                <img src="images/Logo_ECom2.png" alt="">
+                                            </div>
+                                            <div class="card-body bg-light text-center">
+                                                <div class="mb-2">
+                                                    <h5 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Product
+                                                            1</a></h5>
+                                                </div>
+                                                <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                                <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i
+                                                        class="fa fa-star star"></i> </div>
+                                                <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i
+                                                        class="fa fa-cart-plus mr-2"></i> Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev left" href="#carouselProduct" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next right" href="#carouselProduct" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
         </div>
         <!-- End Carousel -->
 
@@ -139,8 +416,8 @@
     
         <script>
             $(document).ready(function () {
-                $("#myBtn").click(function () {
-                    $("#myModal").modal();
+                $("#signinBtn").click(function () {
+                    $("#signinModal").modal();
                 });
             });
         </script>

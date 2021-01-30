@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Navbar */
 nav .ima {
   height: 100px;
 }
@@ -16,6 +17,7 @@ nav .cart {
   margin-left: 20px;
   margin-right: 20px;
 }
+/* End Navbar */
 
 .card-login {
   justify-content: center;
@@ -32,3 +34,34 @@ nav .cart {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Carousel Product */
+.conPro {
+  margin: 5px;
+  padding: 5px;
+}
+
+.conPro .card:hover {
+  transform: scale(0.95);
+}
+
+.conPro .row .col {
+  text-align: center;
+  justify-content: center;
+}
+
+.cPro .carousel-control{
+  font-size: 20px;
+  width: 20px;
+}
+
+.cPro .carousel-control-next-icon:after {
+  content: ">";
+  color: black;
+}
+
+.cPro .carousel-control-prev-icon:after {
+  content: "<";
+  color: black;
+}
+/* End Carousel Product
