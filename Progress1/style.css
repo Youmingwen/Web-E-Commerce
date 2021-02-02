@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+nav .ima {
+  height: 100px;
+}
+
+nav .cart {
+  width: 25px;
+}
+
+.navbar {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* End Navbar */
+
+.card-login {
+  justify-content: center;
+}
+
+.cn-logo {
+  position: relative;
+  text-align: center;
+}
+
+.cn-logo .bottom-centered {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Carousel Promo */
+#carouselPromo .carousel-item {
+  height: 500px;
+}
+
+#carouselPromo .carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  height: 500px;
+}
+
+/* Carousel Product */
+.conPro {
+  margin: 5px;
+  padding: 5px;
+  background-color: #fffafa;
+}
+
+.conPro .card {
+  border: none;
+}
+
+.conPro .card:hover {
+  transform: scale(0.95);
+}
+
+.conPro .row .col {
+  text-align: center;
+  justify-content: center;
+}
+
+.cPro .carousel-control {
+  font-size: 20px;
+  width: 20px;
+}
+
+.cPro .carousel-control-next-icon:after {
+  content: ">";
+  color: black;
+}
+
+.cPro .carousel-control-prev-icon:after {
+  content: "<";
+  color: black;
+}
+/* End Carousel Product */
+
+/* Footer */
+.foobawah {
+  padding: 20px;
+  background-color: #20b2aa;
+}
+
+.foobawah ul {
+  list-style-type: none;
+  justify-content: center;
+  text-align: left;
+}
+
+.foobawah ul .title {
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 500;
+}
+
+.foobawah ul a {
+  color: white;
+}
+/* End Footer */
