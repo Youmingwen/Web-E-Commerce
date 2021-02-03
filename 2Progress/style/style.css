@@ -5,18 +5,32 @@
 }
 
 /* Navbar */
+nav {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav .navAtas {
+  border-bottom: 2px solid #000;
+}
+
 nav .ima {
   height: 100px;
 }
 
-nav .cart {
-  width: 25px;
+nav .searcH .form-control {
+  width: 400px;
+  padding: 10px;
+  outline: none;
+  -webkit-box-shadow: inset 0px 0px 3px 0px #fbfbfb;
+  -moz-box-shadow: inset 0px 0px 3px 0px #fbfbfb;
+  box-shadow: inset 0px 0px 3px 0px #fbfbfb;
 }
 
-.navbar {
-  margin-left: 20px;
-  margin-right: 20px;
+nav .useR a {
+  margin: 10px;
 }
+
 /* End Navbar */
 
 .card-login {
