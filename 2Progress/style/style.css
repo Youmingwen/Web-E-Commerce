@@ -31,6 +31,64 @@ nav .useR a {
   margin: 10px;
 }
 
+nav .navBawah {
+  list-style-type: none;
+  margin: auto;
+  padding: auto;
+  border-bottom: 2px solid #000;
+}
+
+nav .navBawah a {
+  font-size: 18px;
+}
+
+.dropbtn {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropdown-content a {
+  font-size: 14px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: snow;
+  border: 1px solid black;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: black;
+  color: white;
+}
 /* End Navbar */
 
 .card-login {
@@ -63,7 +121,7 @@ nav .useR a {
 }
 
 /* Carousel Product */
-.conPro {
+/* .conPro {
   margin: 5px;
   padding: 5px;
   background-color: #fffafa;
@@ -95,8 +153,22 @@ nav .useR a {
 .cPro .carousel-control-prev-icon:after {
   content: "<";
   color: black;
-}
+} */
 /* End Carousel Product */
+
+/* Product Table Design */
+.producT img {
+  height: auto;
+  width: auto;
+}
+
+.producT p {
+  height: auto;
+  width: auto;
+  font-size: 14px;
+  text-align: justify;
+}
+/* End Product Table Design */
 
 /* Footer */
 .foobawah {

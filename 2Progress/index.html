@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>WGS | Ecommerce Website Fullstack</title>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -11,7 +12,7 @@
     </head>
     <body>
         <!-- NavBar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="flex-column w-100">
                 <ul class="navbar-nav flex-row w-100 navAtas">
                     <form action="form-inline mr-auto merK">
@@ -22,30 +23,29 @@
                         <a class="button" href="" id="searchBtn"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a>
                     </form>
                     <form class="form-inline ml-auto useR">
-                        <a class="button" href="" id="signinBtn"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a>
+                        <a class="button" href="" id="storeBtn"><i class="fas fa-store fa-lg" aria-hidden="true"></i></a>
+                        <a class="button" href="" id="signinBtn" data-toggle="modal" data-target="#signinModal"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a>
                         <a class="button" href="" id="cartBtn"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a>
                     </form>   
                 </ul>
-                <ul class="navbar-nav flex-row w-100 navBawah">
+                <ul class="row w-100 flex-row justify-content-center navBawah">
                     <li class="nav-item">
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Shop</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Shop1</a>
-                                <a class="dropdown-item" href="#">Shop1</a>
-                                <a class="dropdown-item" href="#">Shop1</a>
+                            <button class="dropbtn">Shops</button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Products</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Pro1</a>
-                                <a class="dropdown-item" href="#">Pro1</a>
-                                <a class="dropdown-item" href="#">Pro1</a>
+                            <button class="dropbtn">Products</button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
                             </div>
                         </div>
                     </li>
@@ -129,10 +129,9 @@
         </div>
         <!-- End Carousel -->
 
-        <br><br>
-
+        <br>
         <!-- Carousel Product Card -->
-        <div class="container">
+        <!-- <div class="container">
             <h4 class="text-left">Recommended For You</h4>
         </div>
 
@@ -695,8 +694,32 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>
+        </div> -->
         <!-- End Carousel -->
+
+        <!-- Product Fade Animation -->
+        <div class="container producT">
+            <div class="col">
+                <div class="row row1">
+                    <div class="col m-auto">
+                        <img class="img-fluid" src="images/Trieste.jpg" alt="">
+                    </div>
+                    <div class="col m-auto">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dicta eos, facilis pariatur tenetur nostrum hic quos
+                            cupiditate quis culpa blanditiis, tempora, facere modi mollitia harum! Voluptatum vitae beatae assumenda.</p>
+                    </div>
+                </div>
+                <div class="row row2">
+                    <div class="col m-auto">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dicta eos, facilis pariatur tenetur nostrum hic quos
+                            cupiditate quis culpa blanditiis, tempora, facere modi mollitia harum! Voluptatum vitae beatae assumenda.</p>
+                    </div>
+                    <div class="col m-auto">
+                        <img class="img-fluid" src="images/Ocha.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Footer -->
         <footer class="foobawah">
@@ -728,16 +751,10 @@
         </footer>
         <!-- End Footer -->
 
+        <script src="script/script.js"></script>
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-        <script>
-            $(document).ready(function () {
-                $("#signinBtn").click(function () {
-                    $("#signinModal").modal();
-                });
-            });
-        </script>
     </body>
 </html>
