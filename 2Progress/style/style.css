@@ -6,12 +6,11 @@
 
 /* Navbar */
 nav {
-  margin-left: 10px;
-  margin-right: 10px;
+  padding: 10px;
 }
 
-nav .navAtas {
-  border-bottom: 2px solid #000;
+nav .navbar-toggler {
+  border: none;
 }
 
 nav .ima {
@@ -19,7 +18,7 @@ nav .ima {
 }
 
 nav .searcH .form-control {
-  width: 400px;
+  width: 300px;
   padding: 10px;
   outline: none;
   -webkit-box-shadow: inset 0px 0px 3px 0px #fbfbfb;
@@ -35,6 +34,7 @@ nav .navBawah {
   list-style-type: none;
   margin: auto;
   padding: auto;
+  border-top: 2px solid #000;
   border-bottom: 2px solid #000;
 }
 
@@ -42,9 +42,8 @@ nav .navBawah a {
   font-size: 18px;
 }
 
-.dropbtn {
-  margin-left: 5px;
-  margin-right: 5px;
+.bawahBTN {
+  margin: auto;
   padding: 10px;
   font-size: 16px;
   border: none;
@@ -52,6 +51,7 @@ nav .navBawah a {
 }
 
 .dropdown {
+  font-family: "Gill Sans Nova", sans-serif;
   position: relative;
   display: inline-block;
 }
@@ -64,15 +64,14 @@ nav .navBawah a {
   display: none;
   position: absolute;
   background-color: snow;
-  border: 1px solid black;
-  min-width: 150px;
+  border: 2px solid black;
+  min-width: fit-content;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
@@ -81,11 +80,30 @@ nav .navBawah a {
   text-decoration: none;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdown-content .col {
+  text-align: left;
+  width: 150px;
 }
 
-.dropdown:hover .dropbtn {
+.dropdown-content .rowJud .col p {
+  margin-top: 10px;
+}
+
+.dropdown-content .rowJud .col p {
+  justify-content: center;
+  text-align: center;
+}
+
+.dropdown-content .rowCon .col {
+  margin-bottom: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  width: max-content;
+}
+
+.dropdown:hover .bawahBTN {
   background-color: black;
   color: white;
 }
@@ -120,43 +138,10 @@ nav .navBawah a {
   height: 500px;
 }
 
-/* Carousel Product */
-/* .conPro {
+.producT {
   margin: 5px;
-  padding: 5px;
-  background-color: #fffafa;
 }
 
-.conPro .card {
-  border: none;
-}
-
-.conPro .card:hover {
-  transform: scale(0.95);
-}
-
-.conPro .row .col {
-  text-align: center;
-  justify-content: center;
-}
-
-.cPro .carousel-control {
-  font-size: 20px;
-  width: 20px;
-}
-
-.cPro .carousel-control-next-icon:after {
-  content: ">";
-  color: black;
-}
-
-.cPro .carousel-control-prev-icon:after {
-  content: "<";
-  color: black;
-} */
-/* End Carousel Product */
-
-/* Product Table Design */
 .producT img {
   height: auto;
   width: auto;
@@ -168,27 +153,59 @@ nav .navBawah a {
   font-size: 14px;
   text-align: justify;
 }
+
+.producT img {
+  animation-duration: 5s;
+}
+
+.producT p {
+  animation-duration: 8s;
+}
+
 /* End Product Table Design */
 
 /* Footer */
 .foobawah {
   padding: 20px;
-  background-color: #20b2aa;
+  background-color: #333;
 }
 
-.foobawah ul {
-  list-style-type: none;
+.foobawah .row {
   justify-content: center;
-  text-align: left;
+  padding-top: 15px;
 }
 
-.foobawah ul .title {
-  text-transform: uppercase;
-  color: #333;
-  font-weight: 500;
+.foobawah .col-sm {
+  text-align: center;
 }
 
-.foobawah ul a {
+.foobawah .col-sm .flex-row a {
+  padding: auto;
+  margin-top: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
   color: white;
 }
+
+.foobawah .col-sm .flex-row a:hover {
+  opacity: 5;
+  color: rgb(156, 156, 156);
+}
+
+.foobawah hr {
+  display: block;
+  height: 1px;
+  border-top: 1px solid #ccc;
+}
+
+.foobawah .copyright a {
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
 /* End Footer */
+
+/* Page Login */
+form .row .col {
+  padding: auto;
+}
+/* End Page Login */
