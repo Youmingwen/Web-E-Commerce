@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="body">
+<body class="body shopContent">
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="flex-column w-100">
@@ -177,13 +177,147 @@
     <div class="container containerProdShop">
         <div class="row">
             <div class="col-lg-4 mt-3 mb-4">
-                <section>
-                    <h5 class="mb-3"> Categories</h5>
-                        <div class="text-muted small text-uppercase mb-5">
-                            <p class="mb-3">
-                                <!-- ISI CONTENT SOURCE MDBOOSTRAP DESIGN PAGE PRODUCT & SHOP -->
-                            </p>
+                <section class="categories">
+                    <h5 class="mb-3">Categories</h5>
+                    <div class="text-muted small text-uppercase mb-5">
+                        <p class="mb-3">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card cardPremium">
+                                <div class="card-header" id="headingOne">
+                                    <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">Premium
+                                    </a>
+                                    <i class="fa fa-angle-down text-right" aria-hidden="true"></i>
+                                </div>
+                    
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ul>
+                                            <a href="">
+                                                <li>Item1</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Item1</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Item1</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card cardDrink">
+                                <div class="card-header" id="headingTwo">
+                                    <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseTwo">Drink
+                                    </a>
+                                    <i class="fa fa-angle-down text-right" aria-hidden="true"></i>
+                                </div>
+                    
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ul>
+                                            <a href="">
+                                                <li>Item1</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Item1</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Item1</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card cardFood">
+                                <div class="card-header" id="headingThree">
+                                    <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree"
+                                        aria-expanded="true" aria-controls="collapseThree">Food
+                                    </a>
+                                    <i class="fa fa-angle-down text-right" aria-hidden="true"></i>
+                                </div>
+                    
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ul>
+                                            <a href="">
+                                                <li>Item1</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Item1</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Item1</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card cardBaking">
+                                <div class="card-header" id="headingFour">
+                                    <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"
+                                        aria-expanded="true" aria-controls="collapseFour">Baking
+                                    </a>
+                                    <i class="fa fa-angle-down text-right" aria-hidden="true"></i>
+                                </div>
+                    
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ul>
+                                            <a href="">
+                                                <li>Item1</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Item1</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Item1</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card cardCooking">
+                                <div class="card-header" id="headingFive">
+                                    <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive"
+                                        aria-expanded="true" aria-controls="collapseFive">Cooking
+                                    </a>
+                                    <i class="fa fa-angle-down text-right" aria-hidden="true"></i>
+                                </div>
+                    
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ul>
+                                            <a href="">
+                                                <li>Item1</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Item1</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Item1</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        </p>
+                    </div>
+                </section>
+                <section class="filters">
+                    <h5 class="mb-5">Filters</h5>
+                    <section class="proSearch">
+                        <div class="input-group">
+                            <div class="inline-block">
+                                <input type="text" id="formSearchPro" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="button" class="btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </section>
                 </section>
             </div>
         </div>

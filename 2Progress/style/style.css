@@ -328,3 +328,36 @@ form .row .col {
   padding: 0 5px 0 5px;
 }
 /* End Page Forget Password */
+
+/* Page Shop */
+.shopContent ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.shopContent .card {
+  border: none;
+}
+
+.shopContent .card-header {
+  background-color: white;
+  border-bottom: none;
+}
+
+.shopContent .collapse {
+  border-top: none;
+}
+
+.shopContent .card-body {
+  margin: 0px !important;
+}
+
+.shopContent ul li {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.shopContent input {
+  width: 300px;
+}
+/* End Page Shop */
