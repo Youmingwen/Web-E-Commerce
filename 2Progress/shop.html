@@ -307,17 +307,185 @@
                     </div>
                 </section>
                 <section class="filters">
-                    <h5 class="mb-5">Filters</h5>
-                    <section class="proSearch">
+                    <h5 class="mb-4">Filters</h5>
+                    <section class="mb-4">
                         <div class="input-group">
                             <div class="inline-block">
-                                <input type="text" id="formSearchPro" class="form-control" placeholder="Search">
+                                <input type="text" id="formSearchPro" class="form-control searchData" placeholder="Search">
                             </div>
                             <button type="button" class="btn">
                                 <i class="fas fa-search"></i>
                             </button>
                         </div>
                     </section>
+                    <h6 class="font-weight-bold mb-4">Price</h6>
+                    <section class="mb-4 priceSearch">
+                        <div class="input-group mb-3 price">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Rp</span>
+                            </div>
+                            <input type="number" class="form-control price priceFilterMin" aria-label="Rupiah" placeholder="Minimum Price">
+                        </div>
+                        <div class="input-group mb-3 price">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Rp</span>
+                            </div>
+                            <input type="number" class="form-control price priceFilterMax" aria-label="Rupiah" placeholder="Maximum Price">
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <div class="col-lg-8 mt-3 mb-4">
+                <section class="row d-flex justify-content-around align-items-center mb-4">
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="formSelectSort1">Sort By</label>
+                            <select class="form-control" id="formSelectSort1">
+                                <option>Best Selling</option>
+                                <option>Price: Lowest to Highest</option>
+                                <option>Price: Highest to Lowest</option>
+                                <option>Newest</option>
+                                <option>Heaviest</option>
+                                <option>Lightest</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center float-md-right mb-0">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+                <section>
+                    <!-- Grid Row -->
+                    <div class="row-mb-4">
+                        <!-- Grid Column -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <!-- Card -->
+                            <div>
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="images/product/TriesteCaramel.jpg" alt="Sample">
+                                </div>
+                                <div class="text-center pt-4">
+                                    <h5 class="mb-0">Syrup Trieste Caramel</h5>
+                                    <h5>650ml</h5>
+                                    <h6 class="mb-3">Rp 65.000</h6>
+                                    <button type="button "class="btn btn-primary btn-sm mr-1">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light btn-sm">
+                                        <i class="fas fa-info-circle pr-2"> Details </i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Card -->
+                        </div>
+                        <!-- Grid Column -->
+                        <!-- Grid Column -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <!-- Card -->
+                            <div>
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="images/product/TriesteHazelnut.jpg" alt="Sample">
+                                </div>
+                                <div class="text-center pt-4">
+                                    <h5 class="mb-0">Syrup Trieste Hazelnut</h5>
+                                    <h5>650ml</h5>
+                                    <h6 class="mb-3">Rp 65.000</h6>
+                                    <button type="button " class="btn btn-primary btn-sm mr-1">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light btn-sm">
+                                        <i class="fas fa-info-circle pr-2"> Details </i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Card -->
+                        </div>
+                        <!-- Grid Column -->
+                        <!-- Grid Column -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <!-- Card -->
+                            <div>
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="images/product/TriesteSaltedCaramel.jpg" alt="Sample">
+                                </div>
+                                <div class="text-center pt-4">
+                                    <h5 class="mb-0">Syrup Trieste Salted Caramel</h5>
+                                    <h5>650ml</h5>
+                                    <h6 class="mb-3">Rp 65.000</h6>
+                                    <button type="button " class="btn btn-primary btn-sm mr-1">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light btn-sm">
+                                        <i class="fas fa-info-circle pr-2"> Details </i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Card -->
+                        </div>
+                        <!-- Grid Column -->
+                        <!-- Grid Column -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <!-- Card -->
+                            <div>
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="images/product/TriesteHavanaRum.jpg" alt="Sample">
+                                </div>
+                                <div class="text-center pt-4">
+                                    <h5 class="mb-0">Syrup Trieste Havana / Rum Flavour</h5>
+                                    <h5>650ml</h5>
+                                    <h6 class="mb-3">Rp 65.000</h6>
+                                    <button type="button " class="btn btn-primary btn-sm mr-1">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light btn-sm">
+                                        <i class="fas fa-info-circle pr-2"> Details </i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Card -->
+                        </div>
+                        <!-- Grid Column -->
+                        <!-- Grid Column -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <!-- Card -->
+                            <div>
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="images/product/TriesteBlueCuracao.jpg" alt="Sample">
+                                </div>
+                                <div class="text-center pt-4">
+                                    <h5 class="mb-0">Syrup Trieste Blue Curacao</h5>
+                                    <h5>650ml</h5>
+                                    <h6 class="mb-3">Rp 65.000</h6>
+                                    <button type="button " class="btn btn-primary btn-sm mr-1">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light btn-sm">
+                                        <i class="fas fa-info-circle pr-2"> Details </i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Card -->
+                        </div>
+                        <!-- Grid Column -->
+                    </div>
                 </section>
             </div>
         </div>

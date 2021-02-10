@@ -346,18 +346,42 @@ form .row .col {
 
 .shopContent .collapse {
   border-top: none;
+  padding-left: 20px;
 }
 
 .shopContent .card-body {
   margin: 0px !important;
 }
 
-.shopContent ul li {
+.shopContent .card-body ul li {
   margin-top: 0px;
   margin-bottom: 5px;
 }
 
-.shopContent input {
-  width: 300px;
+.shopContent .searchData {
+  min-width: 0px;
+  min-height: 0px;
+  width: 100%;
+}
+
+/* Menghilangkan Increase Decrease Value Input Box Filter Harga */
+/* Harga Minimum */
+.shopContent .priceFilterMin::-webkit-outer-spin-button,
+.priceFilterMin::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Harga Maksimum */
+.shopContent .priceFilterMax::-webkit-outer-spin-button,
+.priceFilterMax::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.shopContent .price {
+  min-width: 0px;
+  min-height: 0px;
+  width: 250px;
 }
 /* End Page Shop */
