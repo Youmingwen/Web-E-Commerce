@@ -30,6 +30,10 @@ nav .useR a {
   margin: 10px;
 }
 
+nav .useR ion-icon {
+  font-size: 24px;
+}
+
 nav .navBawah {
   list-style-type: none;
   margin: auto;
@@ -116,15 +120,15 @@ nav .navBawah a {
   box-shadow: none;
 }
 
-.fa-store:hover {
+.icnstore:hover {
   color: #ff5653;
 }
 
-.fa-user:hover {
+.icnuser:hover {
   color: #f9df68;
 }
 
-.fa-shopping-cart:hover {
+.icncart:hover {
   color: #054eac;
 }
 /* End Navbar */
