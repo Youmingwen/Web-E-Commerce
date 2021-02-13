@@ -389,3 +389,43 @@ form .row .col {
   width: 250px;
 }
 /* End Page Shop */
+
+/* Page ShopDetail */
+.shopDetail .quanBox {
+  border: 1px solid grey;
+  width: max-content;
+  border-radius: 0.25rem;
+}
+
+.shopDetail .minus,
+.plus {
+  background-color: transparent;
+  border: none;
+  width: 2rem;
+  justify-content: center;
+}
+
+.shopDetail .quantity {
+  background-color: transparent;
+  border-top: none;
+  border-bottom: none;
+  border-left-width: 0.5px;
+  border-right-width: 0.5px;
+  width: min-content;
+  justify-content: center;
+  text-align: center;
+  width: 4rem;
+}
+
+.shopDetail .minus:focus,
+.plus:focus,
+.quantity:focus {
+  outline: none;
+}
+
+.shopDetail .quantity::-webkit-inner-spin-button,
+.quantity::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* End Page ShopDetail */
