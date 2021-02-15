@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>WGS | Shop Detail</title>
+    <title>WGS | Shop Cart</title>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -14,7 +14,7 @@
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </head>
 
-<body class="body shopDetail">
+<body class="body shopCart">
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="flex-column w-100">
@@ -179,51 +179,23 @@
     <!-- Content Detail Product -->
     <main>
         <div class="container">
-            <section class="my-5">
-                <div class="row">
-                    <div class="col-md-5 mb-4 mb-md-0">
-                        <div class="view zoom z-depth-2 rounded">
-                            <img class="img-fluid w-100" src="images/product/TriesteCaramel.jpg" alt="Sample">
+            <section class="mt-5 mb-4">
+                <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="mb-4">
+                                Shop Cart (1)
+                            </h5>
+                            <div class="row-mb-4">
+                                <div class="col-md-5 col-lg-3 col-xl-3">
+                                    <div class="view mb-3 mb-md-0"></div>
+                                </div>
+                                <div class="col-md-7 col-lg-9 col-xl-9">
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <h5>Trieste Import Caramel Taste - 650ml</h5>
-                        <p class="mb-2 text-muted text-uppercase small">Syrup</p>
-                        <p>
-                            <span class="mr-1">
-                                <strong>Rp 65.000</strong>
-                            </span>
-                        </p>
-                        <p class="pt-1">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eius dolores voluptatibus vel, est natus officiis cum voluptates minus reprehenderit iste neque quos consequuntur, laboriosam harum maiores velit odio facilis?
-                        </p>
-                        <hr>
-                        <div class="table-responsive mb-2">
-                            <table class="table table-sm table-borderless">
-                                <tbody>
-                                    <tr>
-                                        <td class="pl-0 pb-0 w-25">Quantity</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="pl-0">
-                                            <div class="form-inline quanBox mb-0">
-                                                <button class="minus" onclick="decrement()">-</button>
-                                                <input type="number" class="quantity" id="quantity" name="quantity" min="0" value="1">
-                                                <button class="plus" onclick="increment()">+</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="table-responsive mb-2">
-                            <button type="button" class="btn btn-light customcart mr-1 mb-2">
-                                <i class="fas fa-shopping-cart pr-2"></i>
-                                Add to Cart
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-md-7"></div>
                 </div>
             </section>
         </div>

@@ -348,7 +348,7 @@ form .row .col {
   border-bottom: none;
 }
 
-.shopContent .collapse {
+.shopContent .categories .collapse {
   border-top: none;
   padding-left: 20px;
 }
@@ -387,6 +387,11 @@ form .row .col {
   min-width: 0px;
   min-height: 0px;
   width: 250px;
+}
+
+.shopContent .isiProduct .btn-primary,
+.btn-light {
+  box-shadow: 1px 1px #888888;
 }
 /* End Page Shop */
 
@@ -428,4 +433,17 @@ form .row .col {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.shopDetail .btn .customcart {
+  box-shadow: 1px 1px #888888;
+}
 /* End Page ShopDetail */
+
+/* Page Shop Cart */
+.shopCart,
+.shopContent .view {
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+/* End Shop Cart Page */
