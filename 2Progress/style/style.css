@@ -402,13 +402,21 @@ form .row .col {
   border-radius: 0.25rem;
 }
 
-.shopDetail .minus,
+/* Plus dan Minus untuk Page shopdetail & shopcart */
 .plus {
-  background-color: transparent;
-  border: none;
+  background-color: transparent !important;
+  border: none !important;
   width: 2rem;
   justify-content: center;
 }
+
+.minus {
+  background-color: transparent !important;
+  border: none !important;
+  width: 2rem;
+  justify-content: center;
+}
+/* End Plus dan Minus */
 
 .shopDetail .quantity {
   background-color: transparent;
@@ -445,5 +453,53 @@ form .row .col {
   position: relative;
   overflow: hidden;
   cursor: default;
+}
+
+.shopCart .justify-content-between {
+  justify-content: space-between !important;
+}
+
+.shopCart .d-flex {
+  display: flex !important;
+}
+
+.shopCart .text-muted {
+  color: #6c757d !important;
+}
+
+.shopCart .quantity::-webkit-inner-spin-button,
+.quantity::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.shopCart .quanBox {
+  border: 1px solid grey;
+  width: fit-content;
+  border-radius: 0.25rem;
+}
+
+.shopCart .quantity {
+  background-color: transparent;
+  border-top: none;
+  border-bottom: none;
+  border-left-width: 0.5px;
+  border-right-width: 0.5px;
+  width: min-content;
+  justify-content: center;
+  text-align: center;
+  width: 4rem;
+}
+
+.shopCart .card-link {
+  color: black;
+  font-size: small;
+  font-weight: 300;
+}
+
+.shopCart .hargaCart {
+  color: black;
+  font-size: small;
+  font-weight: 300;
 }
 /* End Shop Cart Page */
