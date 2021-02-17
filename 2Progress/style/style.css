@@ -392,6 +392,11 @@ form .row .col {
 .shopContent .isiProduct .btn-primary,
 .btn-light {
   box-shadow: 1px 1px #888888;
+  margin-bottom: 10px;
+}
+
+.shopContent .shw {
+  border-radius: 5px;
 }
 /* End Page Shop */
 
@@ -459,10 +464,6 @@ form .row .col {
   justify-content: space-between !important;
 }
 
-/* .shopCart .d-flex {
-  display: flex !important;
-} */
-
 .shopCart .text-muted {
   color: #6c757d !important;
 }
@@ -505,6 +506,11 @@ form .row .col {
 
 .shopCart .n-border {
   border: 0 !important;
+}
+
+.shopCart .promoForm a {
+  text-decoration: none;
+  color: black;
 }
 /* End Shop Cart Page */
 
