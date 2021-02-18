@@ -517,3 +517,29 @@ form .row .col {
 .align-items-center {
   align-items: center !important;
 }
+
+/* Shop Cart Info Page */
+.shopCartInfo .colCard {
+  justify-content: center;
+  margin: auto;
+}
+
+.shopCartInfo .card {
+  border-radius: 4px;
+  border: 1px #ddd solid;
+  background-color: #fff;
+}
+
+.shopCartInfo {
+  font-size: 13px;
+}
+
+.shopCartInfo .n-border {
+  border: 0 !important;
+}
+
+.shopCartInfo .promoForm a {
+  text-decoration: none;
+  color: black;
+}
+/* End Shop Cart Info Page */ ;
