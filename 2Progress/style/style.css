@@ -512,6 +512,14 @@ form .row .col {
   text-decoration: none;
   color: black;
 }
+
+/* .shopCart .css-li-shopcart {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+} */
 /* End Shop Cart Page */
 
 .align-items-center {
@@ -541,5 +549,15 @@ form .row .col {
 .shopCartInfo .promoForm a {
   text-decoration: none;
   color: black;
+}
+
+.shopCartInfo .formPayment {
+  display: inline-block;
+  padding: 0px;
+  text-align: center;
+}
+
+.shopCartInfo .formPayment img {
+  display: block;
 }
 /* End Shop Cart Info Page */ ;

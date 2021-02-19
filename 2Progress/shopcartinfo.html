@@ -184,13 +184,15 @@
                                     <label for="City">City</label>
                                     <input type="text" id="" class="form-control mb-0 mb-lg-2">
                                 </div>
-                                <div class="form-group mb-2 mb-lg-4">
-                                    <label for="postalCode">Postal Code</label>
-                                    <input type="text" id="" class="form-control mb-0 mb-lg-2">
-                                </div>
-                                <div class="form-group mb-2 mb-lg-4">
-                                    <label for="Country">Country</label>
-                                    <input type="text" id="" class="form-control mb-0 mb-lg-2">
+                                <div class="row">
+                                    <div class="col-lg-6 form-group mb-2">
+                                        <label for="postalCode">Postal Code</label>
+                                        <input type="text" id="" class="form-control mb-0 mb-lg-2">
+                                    </div>
+                                    <div class="col-lg-6 form-group mb-2">
+                                        <label for="Country">Phone Number</label>
+                                        <input type="number" id="" class="form-control mb-0 mb-lg-2">
+                                    </div>
                                 </div>
                                 <div class="form-group mb-2 mb-lg-4">
                                     <label for="addInfo">Additional Information</label>
@@ -231,12 +233,25 @@
                                         Shipping
                                         <span>Rp 0</span>
                                     </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center n-border px-0 pb-0">
+                                        Discount
+                                        <span>Rp 0</span>
+                                    </li>
                                     <hr class="mb-0">
                                     <li class="list-group-item d-flex justify-content-between align-items-center n-border px-0 pb-0">
                                         Total
                                         <span>Rp 65.000</span>
                                     </li>
                                 </ul>
+                            </div>
+                        </div>
+                        <div class="card mb-4 shadow p-3 bg-white rounded">
+                            <div class="card-body">
+                                <h5 class="mb-4">Payment Method</h5>
+                                <div class="formPayment">
+                                    <img src="images/payment/BCA.svg" alt="" class="form-check-label" for="flexRadioPayment">
+                                    <input class="mt-2" type="radio" name="flexRadioDefault" id="flexRadioPayment">
+                                </div>
                             </div>
                         </div>
                     </div>
