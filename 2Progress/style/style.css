@@ -6,25 +6,141 @@
 
 /* Navbar */
 nav {
-  padding: 10px;
+  padding: auto;
+}
+
+nav .navbar-header {
+  display: flex;
+}
+
+nav .navbar-header .opennavBtn {
+  font-size: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+nav .navbar-header .opennavBtn:active,
+.opennavBtn:focus {
+  outline-style: none;
+  outline: none;
+}
+
+nav .sidebar a {
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+nav .sidebar a:hover {
+  text-decoration: none;
+}
+
+nav .sidebar li a {
+  list-style-type: none;
+  color: #d3d3d3;
+  margin-left: 25px;
+}
+
+nav .sidebar a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+/* nav .navbarSide ul li {
+  list-style: none;
 }
 
 nav .navbar-toggler {
   border: none;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+} */
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 30px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
 nav .ima {
   height: 100px;
 }
 
-nav .searcH .form-control {
+/* nav .searcH .form-control {
   width: 300px;
   padding: 10px;
   outline: none;
   -webkit-box-shadow: inset 0px 0px 3px 0px #fbfbfb;
   -moz-box-shadow: inset 0px 0px 3px 0px #fbfbfb;
   box-shadow: inset 0px 0px 3px 0px #fbfbfb;
-}
+} */
 
 nav .useR a {
   margin: 10px;
@@ -34,22 +150,20 @@ nav .useR ion-icon {
   font-size: 24px;
 }
 
-nav .navBawah {
+/* nav .navBawah {
   list-style-type: none;
   margin: auto;
   padding: auto;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
 }
 
 nav .navBawah a {
   font-size: 18px;
-}
+} */
 
 /* nav .flex-column {
 } */
 
-.bawahBTN {
+/* .bawahBTN {
   margin: auto;
   padding: 15px;
   font-size: 16px;
@@ -111,14 +225,7 @@ nav .navBawah a {
 .dropdown:hover .bawahBTN {
   background-color: black;
   color: white;
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-  outline: none;
-  box-shadow: none;
-}
+} */
 
 .icnstore:hover {
   color: #ff5653;
@@ -162,7 +269,7 @@ nav .navBawah a {
   height: 500px;
 }
 
-.producT {
+/* .producT {
   margin: 5px;
 }
 
@@ -184,7 +291,7 @@ nav .navBawah a {
 
 .producT p {
   animation-duration: 8s;
-}
+} */
 
 /* End Product Table Design */
 
