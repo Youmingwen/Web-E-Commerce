@@ -252,6 +252,10 @@ nav .navBawah a {
 }
 
 /* Carousel Promo */
+#carouselPromo {
+  box-shadow: 0 8px 15px -5px black;
+}
+
 #carouselPromo .carousel-item {
   height: 500px;
 }
@@ -263,7 +267,7 @@ nav .navBawah a {
   left: 0;
   height: 500px;
   -webkit-animation: fadein 5s;
-  animation: fadein 5s;
+  animation: fadein 3s;
 }
 
 @keyframes fadein {
@@ -330,6 +334,18 @@ nav .navBawah a {
   background-position: 0 0;
 }
 /* End Product */
+
+/* Brand Page */
+.jumbotron {
+  height: 20rem;
+  background-image: url(../images/Jumbotron1.jpg);
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  background-size: cover;
+  box-shadow: 0 8px 15px -5px black;
+}
+
+/* End Brand Page */
 
 /* Footer */
 .foobawah {
