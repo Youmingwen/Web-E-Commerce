@@ -4,59 +4,34 @@
   box-sizing: border-box;
 }
 
-body {
-  background-image: url(../images/Nav1.jpg);
+.body {
+  /* background-image: url(../images/Nav1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position-y: center; */
+  background-position-y: center; */
+  color: #444;
+  background-color: #f2f1ed;
 }
 /* Navbar */
 nav {
   padding: auto;
+  background-color: transparent;
 }
 
 nav .navbar-header {
   display: flex;
 }
 
-nav .navbar-header .opennavBtn {
-  font-size: 24px;
-  border: none;
-  background-color: transparent;
-}
-
-nav .navbar-header .opennavBtn:active,
-.opennavBtn:focus {
-  outline-style: none;
-  outline: none;
-}
-
-nav .sidebar a {
+/* nav .sidebar a {
   color: whitesmoke;
   font-size: 20px;
-}
+} */
 
-nav .sidebar a:hover {
+/* nav .sidebar a:hover {
   text-decoration: none;
-}
+} */
 
-nav .sidebar li a {
-  list-style-type: none;
-  color: #d3d3d3;
-  margin-left: 25px;
-}
-
-nav .sidebar a:focus,
-a:active {
-  text-decoration: none;
-  outline: none;
-}
-
-/* nav .navbarSide ul li {
-  list-style: none;
-}
-
-nav .navbar-toggler {
+/* nav .navbar-toggler {
   border: none;
 }
 
@@ -85,15 +60,28 @@ nav .navbar-toggler {
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
   display: block;
   transition: 0.3s;
+  color: whitesmoke;
+  font-size: 20px;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
   color: #f1f1f1;
+  text-decoration: none;
+}
+
+.sidebar a:active,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.sidebar li a {
+  list-style-type: none;
+  color: #d3d3d3;
+  margin-left: 25px;
 }
 
 /* Position and style the close button (top right corner) */
@@ -106,17 +94,17 @@ nav .navbar-toggler {
 }
 
 /* The button used to open the sidebar */
-.openbtn {
-  font-size: 20px;
+.navbar-header .opennavBtn {
+  font-size: 24px;
   cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
   border: none;
+  background-color: transparent;
 }
 
-.openbtn:hover {
-  background-color: #444;
+.navbar-header .opennavBtn:active,
+.opennavBtn:focus {
+  outline-style: none;
+  outline: none;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -136,7 +124,7 @@ nav .navbar-toggler {
 }
 
 nav .ima {
-  height: 100px;
+  height: 80px;
 }
 
 /* nav .searcH .form-control {
@@ -150,7 +138,7 @@ nav .ima {
 
 nav .useR a {
   margin: 10px;
-  color: white;
+  color: rgb(156, 156, 156);
 }
 
 nav .useR ion-icon {
@@ -334,7 +322,6 @@ nav .navBawah a {
 /* Footer */
 .foobawah {
   padding: 20px;
-  /* background-color: #333; */
   background-color: transparent;
 }
 
@@ -347,18 +334,22 @@ nav .navBawah a {
   text-align: center;
 }
 
+.foobawah p {
+  color: rgb(156, 156, 156);
+}
+
 .foobawah .col-sm .flex-row a {
   padding: auto;
   margin-top: 0px;
   margin-left: 15px;
   margin-right: 15px;
-  color: white;
-}
-
-.foobawah .col-sm .flex-row a:hover {
-  opacity: 5;
   color: rgb(156, 156, 156);
 }
+
+/* .foobawah .col-sm .flex-row a:hover {
+  opacity: 5;
+  color: rgb(156, 156, 156);
+} */
 
 .foobawah hr {
   display: block;
@@ -367,7 +358,7 @@ nav .navBawah a {
 }
 
 .foobawah .copyright a {
-  color: white;
+  color: rgb(156, 156, 156);
   transition: all 0.5s ease-in-out;
 }
 /* End Footer */
