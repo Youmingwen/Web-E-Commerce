@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(../images/Nav1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position-y: center; */
+}
 /* Navbar */
 nav {
   padding: auto;
@@ -144,6 +150,7 @@ nav .ima {
 
 nav .useR a {
   margin: 10px;
+  color: white;
 }
 
 nav .useR ion-icon {
@@ -292,13 +299,43 @@ nav .navBawah a {
 .producT p {
   animation-duration: 8s;
 } */
+/* Product */
+.producT a img {
+  width: 250px;
+  transition: transform 2s;
+}
 
-/* End Product Table Design */
+.producT a img:hover {
+  transform: scale(1.1);
+}
+
+.producT section .btn {
+  padding: 5px 5px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  background: #f00;
+  background: linear-gradient(
+    to right,
+    #f8b3b5 0%,
+    #f8b3b5 50%,
+    #ffffff 50%,
+    #ffffff 100%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.9s;
+}
+
+.producT section .btn:hover {
+  background-position: 0 0;
+}
+/* End Product */
 
 /* Footer */
 .foobawah {
   padding: 20px;
-  background-color: #333;
+  /* background-color: #333; */
+  background-color: transparent;
 }
 
 .foobawah .row {
