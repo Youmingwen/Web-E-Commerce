@@ -311,6 +311,7 @@ nav .navBawah a {
   );
   background-size: 200% 100%;
   background-position: 100% 0;
+  border: none;
   transition: background-position 0.9s;
 }
 
@@ -425,6 +426,10 @@ form .row .col {
 /* End Page MarketPlace  */
 
 /* Page Forget Password */
+.forgetPass {
+  background-color: #f2f1ed;
+}
+
 .forgetPass .text-field {
   position: relative;
   margin: 10px 2.5px 20px 2.5px;
@@ -442,7 +447,9 @@ form .row .col {
   border-top-right-radius: 10px;
 }
 
-.forgetPass .forgetInp:focus {
+.forgetPass .forgetInp:focus,
+.forgetInp:active {
+  outline: none;
   border: thin solid #32cd32;
   border-bottom: solid medium #32cd32;
   background-color: #fff;
@@ -467,6 +474,30 @@ form .row .col {
   padding: 0 5px 0 5px;
 }
 /* End Page Forget Password */
+
+/* Login Page */
+.loGin {
+  background-color: #f2f1ed;
+}
+
+.loGin .form-control:focus {
+  box-shadow: none !important;
+}
+
+.loGin input {
+  font-size: 18px;
+}
+/* End Login Page */
+
+/* Register Page */
+.regisTer {
+  background-color: #f2f1ed;
+}
+
+.regisTer .form-control:focus {
+  box-shadow: none !important;
+}
+/* End Register Page */
 
 /* Page Shop */
 .shopContent ul {
