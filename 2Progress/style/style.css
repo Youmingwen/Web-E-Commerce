@@ -336,7 +336,7 @@ nav .navBawah a {
 /* End Product */
 
 /* Brand Page */
-.jumbotron {
+.brandPage .jumbotron {
   height: 20rem;
   background-image: url(../images/Jumbotron1.jpg);
   background-repeat: no-repeat;
@@ -346,6 +346,36 @@ nav .navBawah a {
 }
 
 /* End Brand Page */
+
+/* Brand Product Page */
+.brandContent .container {
+  position: relative;
+  width: fit-content;
+  padding: 0px;
+}
+
+.brandContent .image {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.brandContent .overlayBranPro {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008cba;
+  overflow: hidden;
+  width: 200px;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.brandContent .container:hover .overlayBranPro {
+  height: 100%;
+}
+/* End Brand Product Page */
 
 /* Footer */
 .foobawah {
