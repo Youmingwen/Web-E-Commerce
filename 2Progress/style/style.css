@@ -847,6 +847,12 @@ form .row .col {
 .shopCartInfo .formPayment img {
   display: block;
 }
+
+.shopCartInfo .phoneNumber::-webkit-inner-spin-button,
+.phoneNumber::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 /* End Shop Cart Info Page */
 
 /* About Us Page */
