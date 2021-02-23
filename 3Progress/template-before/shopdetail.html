@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WGS | Shop Detail</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</head>
+
+<body class="body shopDetail">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="w-100">
+            <ul class="navbar-header w-100 mb-0">
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button> -->
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closenavBtn text-right mr-2" onclick="closeNav()">&times;</a>
+                    <a href="index.html" class="mb-2">HOME</a>
+                    <a href="brand.html" class="mb-2">BRANDS</a>
+                    <div class="mb-2">
+                        <a class="collapsed" data-toggle="collapse" href="#premiumNav" aria-expanded="false"
+                            aria-controls="premiumNav">
+                            PREMIUM
+                            <span>
+                                <i class="fas fa-chevron-down pt-1"></i>
+                            </span>
+                        </a>
+                        <div class="collapse" id="premiumNav">
+                            <ul>
+                                <li><a href="">Premium1</a></li>
+                                <li><a href="">Premium1</a></li>
+                                <li><a href="">Premium1</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <a class="collapsed" data-toggle="collapse" href="#foodNav" aria-expanded="false"
+                            aria-controls="foodNav">
+                            FOOD
+                            <span>
+                                <i class="fas fa-chevron-down pt-1"></i>
+                            </span>
+                        </a>
+                        <div class="collapse" id="foodNav">
+                            <ul>
+                                <li><a href="">Food1</a></li>
+                                <li><a href="">Food1</a></li>
+                                <li><a href="">Food1</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <a class="collapsed" data-toggle="collapse" href="#drinkNav" aria-expanded="false"
+                            aria-controls="drinkNav">
+                            DRINK
+                            <span>
+                                <i class="fas fa-chevron-down pt-1"></i>
+                            </span>
+                        </a>
+                        <div class="collapse" id="drinkNav">
+                            <ul>
+                                <li><a href="">Drink1</a></li>
+                                <li><a href="">Drink1</a></li>
+                                <li><a href="">Drink1</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="" class="mb-2">ABOUT US</a>
+                    <a href="contact.html" class="mb-2">CONTACT US</a>
+                </div>
+    
+                <button class="opennavBtn mx-3" onclick="openNav()" style="color: rgb(156, 156, 156);">&#9776;</button>
+                <form action="form-inline mr-auto merK">
+                    <img class="ima" src="images/Logo.png" alt="Logo_ECom2">
+                </form>
+                <!-- <form class="form-inline m-auto searcH">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                                <a class="button" href="" id="searchBtn"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a>
+                            </form> -->
+                <form class="form-inline ml-auto useR">
+                    <!-- <a class="button" href="" id="searchBtn"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a> -->
+                    <a class="button" href="marketplace.html" id="storeBtn">
+                        <ion-icon class="icnstore" name="storefront"></ion-icon>
+                    </a>
+                    <!-- <a class="button" href="login.html" id="signinBtn" data-toggle="modal" data-target="#signinModal"> -->
+                    <a class="button" href="login.html" id="signinBtn">
+                        <ion-icon class="icnuser" name="person"></ion-icon>
+                    </a>
+                    <a class="button" href="shopcart.html" id="cartBtn">
+                        <ion-icon class="icncart" name="cart"></ion-icon>
+                    </a>
+                </form>
+                <hr>
+            </ul>
+    
+            <!--  -->
+            <!-- <div class="collapse navbar-collapse navbarSide" id="navbarNav">
+                            <div class="navbar-nav">
+                                <ul class="nav-item mr-3">
+                                    <li><a href="index.html">HOME</a></li>
+                                </ul>
+                                <ul class="nav-item mr-3">
+                                    <a class="collapsed" data-toggle="collapse" href="#premiumNav" aria-expanded="false" aria-controls="premiumNav">
+                                        PREMIUM
+                                        <span>
+                                            <i class="fas fa-chevron-down pt-1"></i>
+                                        </span>
+                                    </a>
+                                    <div class="collapse" id="premiumNav">
+                                        <ul>
+                                            <li><a href="">Premium1</a></li>
+                                            <li><a href="">Premium1</a></li>
+                                            <li><a href="">Premium1</a></li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                                <ul class="nav-item mr-3">
+                                    <li><a href="">ABOUT US</a></li>
+                                </ul>
+                                <ul class="nav-item mr-3">
+                                    <li><a href="contact.html">CONTACT US</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+            <!--  -->
+    
+            <!-- <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="row w-100 flex-row justify-content-center navBawah navbar-nav">
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a href="index.html"><button class="bawahBTN"><b>HOME</b></button></a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a href="shop.html"><button class="dropbtn bawahBTN"><b>PRODUCT</b></button></a>
+                                        <div class="dropdown-content">
+                                            <div class="container">
+                                                <div class="row rowJud">
+                                                    <div class="col">
+                                                        <p>Premium</p>
+                                                        <hr>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>Drink</p>
+                                                        <hr>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>Food</p>
+                                                        <hr>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>Baking</p>
+                                                        <hr>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>Cooking</p>
+                                                        <hr>
+                                                    </div>
+                                                </div>
+                                                <div class="row rowCon">
+                                                    <div class="col">
+                                                        <a href="#">Link 1</a>
+                                                        <a href="#">Link 2</a>
+                                                        <a href="#">Link 3</a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="#">Link 1</a>
+                                                        <a href="#">Link 2</a>
+                                                        <a href="#">Link 3</a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="#">Link 1</a>
+                                                        <a href="#">Link 2</a>
+                                                        <a href="#">Link 3</a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="#">Link 1</a>
+                                                        <a href="#">Link 2</a>
+                                                        <a href="#">Link 3</a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="#">Link 1</a>
+                                                        <a href="#">Link 2</a>
+                                                        <a href="#">Link 3</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a href="#"><button class="bawahBTN"><b>ABOUT</b></button></a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a href="contact.html"><button class="bawahBTN"><b>CONTACT US</b></button></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> -->
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Sign In & Sign Up Modal -->
+    <!-- <div class="modal" tabindex="-1" role="dialog" id="signinModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="">Login with</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <form class="lembaran">
+                        <div class="form-group">
+                            <input name="" class="form-control" placeholder="Email" type="email">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="******" type="password">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block"> Login </button>
+                                </div>
+                            </div>
+                            <div class="col col-md-7 text-right">
+                                <a class="small" href="forgetPass.html">Forgot password ?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <span> Looking to
+                        <a type="button" href="register.html">create an account ?</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Content Detail Product -->
+    <main>
+        <div class="container">
+            <section class="my-5">
+                <div class="row">
+                    <div class="col-md-5 mb-4 mb-md-0">
+                        <div class="view zoom z-depth-2 rounded">
+                            <img class="img-fluid w-100" src="images/product/TriesteCaramel.jpg" alt="Sample">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <h5>Trieste Import Caramel Taste - 650ml</h5>
+                        <p class="mb-2 text-uppercase small">Syrup</p>
+                        <p>
+                            <span class="mr-1">
+                                <strong>Rp 65.000</strong>
+                            </span>
+                        </p>
+                        <p class="pt-1">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eius dolores voluptatibus vel, est natus officiis cum voluptates minus reprehenderit iste neque quos consequuntur, laboriosam harum maiores velit odio facilis?
+                        </p>
+                        <hr>
+                        <div class="table-responsive mb-2">
+                            <table class="table table-sm table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td class="pl-0 pb-0 w-25">Quantity</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pl-0">
+                                            <div class="form-inline quanBox mb-0">
+                                                <button class="minus" onclick="decrement()">-</button>
+                                                <input type="number" class="quantity" id="quantity" name="quantity" min="0" value="1">
+                                                <button class="plus" onclick="increment()">+</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive mb-2">
+                            <button type="button" class="btn btn-light customcart mr-1 mb-2">
+                                <i class="fas fa-shopping-cart pr-2"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-7"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- End Content Detail Product -->
+
+    <!-- Footer -->
+    <footer class="foobawah">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="flex-row">
+                        <a href=""><i class="fab fa-facebook-f fa-2x" aria-hidden="true"></i></a>
+                        <a href=""><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
+                        <a href=""><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="copyright">
+                <p class="text-center">
+                    &#169 2021 WGS. All Rights Reserved. -
+                    <a href="">Privacy Policy</a> -
+                    <a href="">Terms & Conditions</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="script/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
