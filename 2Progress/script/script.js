@@ -1,12 +1,13 @@
-// Page ShopDetail Quantity
+// Page brandProduct Quantity
 function increment() {
-    document.getElementById('quantity').stepUp();
+    document.getElementById('quantity').stepUp(1);
 }
 
 function decrement() {
-    document.getElementById('quantity').stepDown();
+    document.getElementById('quantity').stepDown(1);
 }
 
+// Navbar
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
