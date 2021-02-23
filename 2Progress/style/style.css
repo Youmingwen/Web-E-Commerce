@@ -365,7 +365,7 @@ nav .navBawah a {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008cba;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   overflow: hidden;
   width: 200px;
   height: 0;
@@ -375,6 +375,65 @@ nav .navBawah a {
 .brandContent .container:hover .overlayBranPro {
   height: 100%;
 }
+
+.brandContent h5,
+p {
+  color: #5aaf4c;
+  margin-top: 25px;
+}
+
+.brandContent p {
+  margin-bottom: 2px;
+}
+
+.brandContent .quanBox {
+  margin: auto;
+  background-color: whitesmoke;
+  border: 1px solid grey;
+  width: max-content;
+  border-radius: 0.25rem;
+}
+
+.brandContent .quantity {
+  background-color: transparent;
+  border-top: none;
+  border-bottom: none;
+  border-left-width: 0.5px;
+  border-right-width: 0.5px;
+  width: min-content;
+  justify-content: center;
+  text-align: center;
+  width: 4rem;
+}
+
+.brandContent .minus:focus,
+.plus:focus,
+.quantity:focus {
+  outline: none;
+}
+
+.brandContent .quantity::-webkit-inner-spin-button,
+.quantity::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.brandContent .rowaddCart {
+  justify-content: center;
+}
+
+.brandContent .rowaddCart .table-responsive {
+  margin-top: 1rem;
+}
+
+.brandContent .rowaddCart .btn-sm {
+  margin-top: 0.5rem;
+}
+
+.brandContent .table {
+  margin-bottom: 0;
+}
+
 /* End Brand Product Page */
 
 /* Footer */
@@ -783,4 +842,115 @@ form .row .col {
 .shopCartInfo .formPayment img {
   display: block;
 }
-/* End Shop Cart Info Page */ ;
+/* End Shop Cart Info Page */
+
+/* About Us Page */
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+.abtus h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 48px;
+}
+
+.abtus p {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.abtus .header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  color: white;
+}
+
+.abtus .icons {
+  font-size: 64px;
+  width: 50px;
+  fill: white;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.abtus .inner-header {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.abtus .flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.abtus .waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.abtus .content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.abtus .parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.abtus .parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.abtus .parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.abtus .parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.abtus .parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+/* End About Us Page */
