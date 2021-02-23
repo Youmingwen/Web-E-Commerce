@@ -10,7 +10,7 @@
   background-size: cover;
   background-position-y: center; */
   color: #444;
-  background-color: #f2f1ed;
+  /* background-color: #f2f1ed; */
 }
 /* Navbar */
 nav {
@@ -347,12 +347,17 @@ nav .navBawah a {
 
 /* End Brand Page */
 
+/* Brand Pro Page */
+.brandProPage .container {
+  background-color: white !important;
+}
+/* End Brand Pro Page  */
+
 /* Brand Product Page */
 .brandContent .container {
   position: relative;
   width: fit-content;
   padding: 0px;
-  box-shadow: 2px 2px 5px paleturquoise;
   border-radius: 5px;
 }
 
